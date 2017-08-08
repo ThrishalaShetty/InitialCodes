@@ -22,7 +22,7 @@ import org.apache.spark.streaming.api.java.*;
 public class WordCount {
   public static void main(String[] args) throws Exception {
 
-// Create a local StreamingContext with two working thread and batch interval of 1 second
+
 SparkConf conf = new SparkConf().setMaster("local[2]").setAppName("wordCount");
 JavaStreamingContext sc = new JavaStreamingContext(conf, Durations.seconds(1));
 
